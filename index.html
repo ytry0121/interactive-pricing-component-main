@@ -38,10 +38,13 @@
   <div class="card">
     <div class="card-top">
       <div class="pv-container"><span class="pageviews">100K</span>Pageviews</div>
-      <input class="price-range" type="range" name="price-range" id="price-range" min="0" max="4" />
+      <div class="price-range-container">
+        <div class="range-filled"></div>
+        <input class="price-range" type="range" name="price-range" id="price-range" min="0" max="4" />
+    </div>
       <div class="price-container">$<span class="price">16.00</span> /month</div>
-      <div class="billing"> Monthly Billing <input type="checkbox" name="yearly_flg" id="yearly_flg">Yearly Billing<span class="discount"> 25%
-          discount</span></div>
+      <div class="billing"> <label for="yearly_flg"> Monthly Billing <input type="checkbox" name="yearly_flg" id="yearly_flg">Yearly Billing<span class="discount"> 25%
+          discount</span></label></div>
     </div>
     <div class="card-bottom">
       <ul>
