@@ -57,6 +57,7 @@ body {
 .title-disc {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -82,6 +83,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 15rem;
+    align-items: center;
 }
 
 .pv-container {
@@ -90,6 +92,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-weight: 800;
+    text-align: start;
 }
 
 .price-range-container {
@@ -142,11 +145,16 @@ body {
 .price-container {
     grid-column: 2/3;
     grid-row: 1;
-    font-weight:800;
+    font-weight: 800;
+    position: relative;
+    text-align: end;
 }
 .price{
-    color:var(--dark-desaturated-blue);
+    color: var(--dark-desaturated-blue);
     font-size: 38px;
+    position: absolute;
+    right: 60px;
+    top: -16px;
 }
 
 .billing {
