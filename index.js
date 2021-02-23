@@ -15,7 +15,6 @@ function pvPriceRange() {
     const { pv, price } = { ...price_data[price_range.value] };
     pv_num.textContent = pv;
     price_num.textContent = `$ ${price}`;
-    console.log(`${parseInt(price_range.value) * 25}%`);
     range_filled.style.width = `${parseInt(price_range.value) * 25}%`;
 }
 
