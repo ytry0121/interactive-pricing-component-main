@@ -11,18 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -39,8 +27,8 @@
     <div class="card-top">
       <div class="pv-container"><span class="pageviews">100K</span> Pageviews</div>
       <div class="price-range-container">
-        <div class="range-filled"></div>
         <input class="price-range" type="range" name="price-range" id="price-range" min="0" max="4" />
+        <div class="range-filled"></div>
       </div>
       <div class="price-container"><span class="price">$16.00</span> / month</div>
       <div class="billing">
@@ -50,7 +38,7 @@
             <input type="checkbox" name="yearly_flg" id="yearly_flg">
           </div>
           Yearly Billing
-          <span class="discount"> 25% discount</span>
+          <span class="discount"> 25% <span>discount</span></span>
         </label>
       </div>
     </div>
@@ -63,12 +51,6 @@
       </ul>
       <button>Start my trial</button>
     </div>
-  </div>
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
   </div>
   <script src="index.js"></script>
 </body>
