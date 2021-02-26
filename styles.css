@@ -25,7 +25,6 @@
 
 * {
     font-family: 'Manrope', sans-serif;
-    color: var(--grayish-blue);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -38,7 +37,7 @@ html, body {
 body {
     background-color: var(--very-pale-blue);
     text-align: center;
-    /* position: relative; */
+    color: var(--grayish-blue);
     font-size: 15px;
 }
 
@@ -64,10 +63,6 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    /* position: absolute; */
-    /* right: 0; */
-    /* left: 0; */
-    /* top: calc(50% - 10.25rem); */
     border-radius: 10px;
     background-color: var(--white);
     width: 540px;
@@ -185,10 +180,8 @@ body {
     height: 21px;
     background: var(--light-grayish-blue);
     border-radius: 16px;
-    /* position: relative; */
     cursor: pointer;
     display: flex;
-    /* justify-items: center; */
     align-items: center;
     padding: 0 3px;
     margin: 0px 15px;
@@ -198,23 +191,12 @@ body {
     background: var(--strong-cyan);
 }
 
-/* .yearly_flg_toggle:before {
-    content:"";
-    width: 1rem;
-    height: 1rem;
-    background: pink;
-} */
-
 #yearly_flg {
     appearance: none;
     width: 14px;
     height: 14px;
     border-radius: 14px;
     background: var(--white);
-    /* transform: translateX(-10px); */
-    /* position: absolute; */
-    /* top: 2px; */
-    /* left: 12px; */
     cursor: pointer;
     outline: none;
 }
@@ -273,7 +255,7 @@ button {
     body {
         font-size: 13px;
     }
-    .header{
+    .header {
         background-position: center top 40px, left bottom;
         padding: 75px 0 240px;
     }
@@ -297,7 +279,7 @@ button {
     }
     .card-top {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 59px 36px 92px auto;
+        grid-template-rows: 59px 48px 92px auto;
         height: 245px;
         align-items: unset;
     }
@@ -310,29 +292,34 @@ button {
     }
     .price-container {
         grid-row: 3;
+        font-size: 13px;
     }
-    .price-container,.price{
+    .price-container, .price {
         position: unset;
         right: unset;
-    top: unset;
+        top: unset;
+    }
+    .price {
+        font-size: 32px;
+        padding-right:10px;
     }
     .billing {
         grid-row: 4;
     }
-    .discount{
+    .discount {
         right: -45px;
     }
-    .discount span{
+    .discount span {
         display: none;
     }
-    hr{
+    hr {
         margin-bottom: 18px;
     }
-    .card-bottom{
+    .card-bottom {
         display: unset;
     }
-    .card-bottom ul{
-        text-align-last:center;
+    .card-bottom ul {
+        text-align-last: center;
         padding-bottom: 26px;
     }
 }
